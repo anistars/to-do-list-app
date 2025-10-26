@@ -1,19 +1,46 @@
-# React + Vite
+# 📝 My To-Do App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and elegant task management application built with **React** and **Bootstrap**. This app helps users stay organized by allowing them to add, edit, complete, and delete tasks effortlessly.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Add new tasks
+- ✏️ Edit existing tasks
+- ✔️ Mark tasks as completed
+- 🗑️ Delete tasks
+- 🎨 Responsive UI with Bootstrap styling
+- 💾 State management using React Hooks
 
-## React Compiler
+## 📁 Project Structure
+src/ ├── components/ │   ├── Header.jsx │   ├── ToDoList.jsx │   └── ToDoItem.jsx ├── App.jsx ├── App.css └── index.js
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 🛠️ Technologies Used
 
-Note: This will impact Vite dev & build performances.
+- [React](https://reactjs.org/)
+- [Bootstrap](https://getbootstrap.com/)
+- [React Icons / Bootstrap Icons](https://icons.getbootstrap.com/)
 
-## Expanding the ESLint configuration
+## 🧑‍💻 How to Run the Project
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# to-do-list-app
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/anistars/to-do-list-app.git
+cd my-todo-app
+
+npm install
+
+npm run dev
+The app will run at http://localhost:port_number/ by default.
+
+![Basic layout](image.png)
+
+![Adding tasks](image-1.png)
+
+![Strike out completed tasks](image-2.png)
+
+![Deleting completed tasks](image-3.png)
+
+![Update of task](image-4.png)
+
+![Updated task](image-5.png)
