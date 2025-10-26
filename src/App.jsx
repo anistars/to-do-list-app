@@ -4,9 +4,11 @@ import Header from './components/Header.jsx'
 import ToDoList from './components/ToDoList.jsx'
 
 function App() {
+  //State to hold the list of todos
   const [todos, setTodos] = useState([])
   const [newTodo, setNewTodo] = useState('')
 
+  // Function to add a new task
   const addTask = () => {
     if (newTodo.trim() === '') return
     const newTask = {
@@ -19,10 +21,12 @@ function App() {
     console.log(todos)
   }
 
+  // Function to delete a task
   const deleteTodo = (id) => {
     setTodos(todos.filter(todo => todo.id !== id))
   }
 
+  // Function to toggle the completion status of a task
   const toggleComplete = (id) => {
     setTodos(todos.map(todo => {
       if (todo.id === id) {
@@ -32,6 +36,7 @@ function App() {
     }))
   }
 
+  // Function to update the text of a task
   const updateTodo = (id, newTask) => {
     setTodos(todos.map(todo => {
       if (todo.id === id) {
@@ -60,6 +65,7 @@ function App() {
               Add Task
             </button>
           </div>
+          {/* ToDoList Component to display the list of tasks */}
           <ToDoList
             todos={todos}
             onDelete={deleteTodo}

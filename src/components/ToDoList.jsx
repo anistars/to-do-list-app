@@ -10,8 +10,10 @@ function ToDoList({ todos, onDelete, onToggle, onEdit }) {
   }
 
   return (
+    //List of Tasks to be displayed
     <ul className="list-group">
       {todos.map((todo) => (
+        //Mapping through the list of tasks and passing props to ToDoItem component
         <ToDoItem
           key={todo.id}
           todo={todo}
