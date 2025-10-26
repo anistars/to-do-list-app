@@ -33,14 +33,14 @@ npm install
 npm run dev
 The app will run at http://localhost:port_number/ by default.
 
-![Basic layout](image.png)
+![Basic layout](screenshots/image.png)
 
-![Adding tasks](image-1.png)
+![Adding tasks](screenshots/image-1.png)
 
-![Strike out completed tasks](image-2.png)
+![Strike out completed tasks](screenshots/image-2.png)
 
-![Deleting completed tasks](image-3.png)
+![Deleting completed tasks](screenshots/image-3.png)
 
-![Update of task](image-4.png)
+![Update of task](screenshots/image-4.png)
 
-![Updated task](image-5.png)
+![Updated task](screenshots/image-5.png)
