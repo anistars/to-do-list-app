@@ -36,7 +36,24 @@ function ToDoItem({ todo, onDelete, onToggle, onEdit }) {
         )}
       </div>
 
-      
+      <div className="d-flex gap-2">
+        {isEditing ? (
+          <button onClick={handleEditSave} className="btn btn-success btn-sm">
+            <i className="bi bi-check-lg me-1"></i>Save
+          </button>
+        ) : (
+          <button
+            className="btn btn-warning btn-sm text-white"
+            onClick={() => setIsEditing(true)}
+            style={{ marginRight: '0.5rem' }}
+          >
+            <i className="bi bi-pencil-square me-1"></i>Edit
+          </button>
+        )}
+        <button className="btn btn-danger btn-sm" onClick={() => onDelete(todo.id)}>
+          <i className="bi bi-trash me-1"></i>Delete
+        </button>
+      </div>
     </li>
   )
 }
