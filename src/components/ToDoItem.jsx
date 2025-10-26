@@ -26,14 +26,13 @@ function ToDoItem({ todo, onDelete, onToggle, onEdit }) {
             value={editedText}
             onChange={(e) => setEditedText(e.target.value)}
             className="form-control form-control-sm"
-            style={{ width: '250px'  }}
+            style={{ width: '250px' }}
           />
         ) : (
           // Display task text with strikethrough if completed
           <span
-            className={`${
-              todo.completed ? 'text-decoration-line-through text-secondary' : ''
-            }`}
+            className={`${todo.completed ? 'text-decoration-line-through text-secondary' : ''
+              }`}
           >
             {todo.text}
           </span>
